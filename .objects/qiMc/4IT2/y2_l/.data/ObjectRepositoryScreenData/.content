@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="qkN92XTExUmsF3IIwja30Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFZSURBVDhPpZNNK0RxFMYfyUs+gmwsbBjNSrKUSFZ8B8VuNlbeUhIf4pkpH8GCfAGspLxsLGQ0yEaKnu6d0tUZ52/u3KZ0OfXc/305/c7LPQdJkuA/+r4AEFEUsS5iW8SaiM2UNkSsitgSsSdiXkTfD0DEnIgzEW8i7kU8t9GTf3txv5WI6A2A4LAkYlLEgkdJy95NiZgVcSHiMS5jJAASESci+hv1/GIi9kXUogqKAfAq4lLEeNa5nYk4FlGNyhgOgHcHjGWdsyaiQ8SRiId6BYUA+MgJODRAXMFoboBZyCD6SwZmIg5E3InNHlgTr3I08VyEGgEd8CniNMdvLIu4FZs9iH3KbEgGRBQyGhQx5CNestQtulKTuOyTaKUYuWaT5rJ7g1dF1EVEIhZblklEl4gZETu+LLZQuy57tkWyRbsWcSNiogWQqs1APanT1C2i008LMm2pB8AXvayhJCk8EvIAAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia' /&gt;" Title="Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia" Url="https://www.metrocuadrado.com/venta/bogota">
+      <imageRef attrName="InformativeScreenshot" originalValue="c6164049c31236d47e1da4726cb54fed.jpg" xmlns="">0wY5Lp8zFQECcww8EFq9o1Q</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

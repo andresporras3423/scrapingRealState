@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="R1KmLOgolUaDYrhmxZ24vg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.metrocuadrado.com/inmueble/venta-lote-bogota-granjas-de-techo/495-M5584378" DesignTimeRectangle="266, 308, 642, 81" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' visibleinnertext='Área privada*m²' /&gt;" FuzzySelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' visibleinnertext='Área privada*m²' type='' aaname='' /&gt;" Guid="11be2f9c-4db1-4936-b4a6-509dbddbd0e9" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="fa33ae6bc04aa50aca9b8ff9aa5eef03.png" xmlns="">0PaZawu7dFkWVQ9QMpnWV-g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

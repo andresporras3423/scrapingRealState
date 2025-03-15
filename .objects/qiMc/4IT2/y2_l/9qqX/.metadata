@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Get Text 'Ubicación Principal'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "9qqXn75FKU-YIswj-aUG8g",
+  "Reference": "Ls64MbztdUqogCOKu_o7Gw/9qqXn75FKU-YIswj-aUG8g",
+  "ParentRef": "Ls64MbztdUqogCOKu_o7Gw/y2_leA8mHEuke2IwYuG2cA",
+  "Created": "2025-03-10T01:24:34.5127472Z",
+  "Updated": "2025-03-10T01:24:34.5127472Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

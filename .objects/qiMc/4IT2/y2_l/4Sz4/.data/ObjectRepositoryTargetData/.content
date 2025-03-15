@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hQugmg4mfkaoj_x4xK27zA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.metrocuadrado.com/venta/bogota" CvElementArea="1464, 512, 209, 58" CvType="InputBox" DesignTimeRectangle="1595, 292, 208, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl class='pt-dropdown__container' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl class='pt-dropdown__container' shadowhostid='' tag='DIV' type='' aaname='' /&gt;" Guid="2be901a1-55b0-45db-8ba1-0d1a1dd44699" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvElementArea="1593, 235, 212, 63" CvType="InputBox" DesignTimeRectangle="1606, 307, 146, 30" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl id='sorterControl' shadowhostid='' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl id='sorterControl' shadowhostid='' tag='INPUT' type='text' class='pt-dropdown__container__chips__input pt-dropdown__container__chips__input--no-header-filled' placeholder='Ordenar por' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c38e5696ba624334d1f34e20b9d57a46.png" xmlns="">0U6sffoO3s0mFSP62jPLf7w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

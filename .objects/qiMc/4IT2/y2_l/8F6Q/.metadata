@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Area privada",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "8F6QW2o0HE-w2c3BNytvCA",
+  "Reference": "Ls64MbztdUqogCOKu_o7Gw/8F6QW2o0HE-w2c3BNytvCA",
+  "ParentRef": "Ls64MbztdUqogCOKu_o7Gw/y2_leA8mHEuke2IwYuG2cA",
+  "Created": "2025-02-13T13:08:12.8110655Z",
+  "Updated": "2025-02-13T13:08:12.8110655Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

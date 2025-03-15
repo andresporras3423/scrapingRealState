@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Chrome Inmuebles en Venta en Bogotá D.C. Nuevos -",
+  "Description": "",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Id": "y2_leA8mHEuke2IwYuG2cA",
+  "Reference": "Ls64MbztdUqogCOKu_o7Gw/y2_leA8mHEuke2IwYuG2cA",
+  "ParentRef": "Ls64MbztdUqogCOKu_o7Gw/4IT2VoKs5kCpCEE0DszmmA",
+  "Created": "2025-02-06T23:19:39.1233103Z",
+  "Updated": "2025-02-06T23:19:39.1233103Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

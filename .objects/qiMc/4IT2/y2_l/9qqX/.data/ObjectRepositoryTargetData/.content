@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hbAL3kb0WkyeKgACCQbMpg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192117004" CvTextArea="205, 371, 243, 20" CvType="AnyWordGroup" DesignTimeRectangle="185, 430, 242, 32" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='jsx-3405404036 body body-regular medium' /&gt;" Guid="f608b2f0-73ee-44c1-8d54-aeb204991e75" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Apartamento en Venta. Ref #FRO54FA4' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="182, 334, 178, 23" CvTextArgument="Ubicacion Principal" CvType="Text" DesignTimeRectangle="185, 393, 242, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='jsx-3405404036 body body-bold medium' aaname='Ubicación Principal' check:innerText='Ubicación Principal' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f9465c12c9f7c38a59a2884958f3a90e.png" xmlns="">0G0CCZQoooU2XonkopdBVfA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,139 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractForEachRealState.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "currentUrl&Sequence_3",
+        "areaConstruida&Sequence_3",
+        "areaPrivada&Sequence_3",
+        "habitaciones&Sequence_3",
+        "banyos&Sequence_3",
+        "estrato&Sequence_3",
+        "precio&Sequence_3",
+        "estado&Sequence_3",
+        "fechaEntrega&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "ExtractDataTable"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractCurrentRealState.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "additionalDetails&Sequence_5",
+        "initialDetails&Sequence_5",
+        "propertyDetails&Sequence_5",
+        "propertyImage&Sequence_5",
+        "codigoInmueble&Sequence_5",
+        "parqueaderos&Sequence_5",
+        "banyos&Sequence_5",
+        "habitaciones&Sequence_5",
+        "estrato&Sequence_5",
+        "areaPrivada&Sequence_5",
+        "areaConstruida&Sequence_5",
+        "precio&Sequence_5",
+        "properties&Sequence_5",
+        "regionImage&Sequence_5",
+        "results&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_currentUrl"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ExtractCurrentRealState(Autosaved).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": null,
+      "ArgumentsSectionElementsOrder": [
+        "in_currentUrl"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "fincaRaiz.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "db_conn&Sequence_4",
+        "ExtractDataTable&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "fincaRaizAdditionalDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_inmuebleDetalles&Sequence_1",
+        "moreBenefits&Sequence_2",
+        "remodelado&Sequence_2",
+        "aceptaPermuta&Sequence_2",
+        "totalPisos&Sequence_2",
+        "pisoNumero&Sequence_2",
+        "parqueaderos&Sequence_2",
+        "administracion&Sequence_2",
+        "antiguedad&Sequence_2",
+        "areaPrivada&Sequence_2",
+        "areaConstruida&Sequence_2",
+        "estadoInmueble&Sequence_2",
+        "tipoInmueble&Sequence_2",
+        "estrato&Sequence_2",
+        "ubicacionPrincipal&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_dr_inmuebleDetalles",
+        "in_link"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "listFiscaRaizAdditionalDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_currentViviendas&Sequence_1",
+        "db_conn&Sequence_1",
+        "dr_inmuebleDetalles&Sequence_2",
+        "dt_inmuebleDetalles&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

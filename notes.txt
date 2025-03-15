@@ -1,0 +1,7 @@
+﻿precio: System.Text.RegularExpressions.Regex.Match(properties,"([0-9]+\.*)+").Value
+área construida: System.Text.RegularExpressions.Regex.Match(properties,"(?<=Área Construida\s*)\d+(?=\s*m²)").Value
+área privada: System.Text.RegularExpressions.Regex.Match(properties,"(?<=Área Privada\s*)\d+(?=\s*m²)").Value
+estrato: System.Text.RegularExpressions.Regex.Match(properties,"(?<=Estrato\s*)\d+").Value
+habitaciones: System.Text.RegularExpressions.Regex.Match(properties,"\d+(?=\s*hab.)").Value
+baños: System.Text.RegularExpressions.Regex.Match(properties,"\d+(?=\s*ban.)").Value
+parqueaderos: System.Text.RegularExpressions.Regex.Match(properties,"\d+(?=\s*par.)").Value

@@ -1,0 +1,324 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ExtractCurrentRealState" this:ExtractCurrentRealState.in_currentUrl="https://www.metrocuadrado.com/inmueble/venta-lote-bogota-granjas-de-techo/495-M5584378" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_currentUrl" Type="InArgument(x:String)" />
+  </x:Members>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Vision.Core.OCR</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1156.8000000000002,2928.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Inmuebles en Venta en Bogotá D.C. Nuevos -" sap:VirtualizedContainerService.HintSize="500.8,2905.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Always" ScopeGuid="097c57e4-3253-4037-bdbc-9f864f5fd0be" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,2665.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="properties" />
+              <Variable x:TypeArguments="ui:Image" Name="regionImage" />
+              <Variable x:TypeArguments="scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))" Name="results" />
+              <Variable x:TypeArguments="x:String" Name="precio" />
+              <Variable x:TypeArguments="x:String" Name="areaConstruida" />
+              <Variable x:TypeArguments="x:String" Name="areaPrivada" />
+              <Variable x:TypeArguments="x:String" Name="estrato" />
+              <Variable x:TypeArguments="x:String" Name="habitaciones" />
+              <Variable x:TypeArguments="x:String" Name="banyos" />
+              <Variable x:TypeArguments="x:String" Name="parqueaderos" />
+              <Variable x:TypeArguments="x:String" Name="additionalDetails" />
+              <Variable x:TypeArguments="ui:UiElement" Name="initialDetails" />
+              <Variable x:TypeArguments="ui:UiElement" Name="propertyDetails" />
+              <Variable x:TypeArguments="ui:Image" Name="propertyImage" />
+              <Variable x:TypeArguments="x:String" Name="codigoInmueble" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'Precio$2.000.000.000'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[precio]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-apartamento-bogota-ciudad-jardin-norte-1-habitaciones-1-banos/11013-M5606926" CvTextArea="1421, 341, 247, 26" CvType="AnyWordGroup" DesignTimeRectangle="1422, 335, 243, 35" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='h-auto d-xl-flex justify-content-around align-items-center my-2 my-xl-1' innertext='Precio*' parentclass='sc-TOsTZ jXPhky' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='h-auto d-xl-flex justify-content-around align-items-center my-2 my-xl-1' parentclass='sc-TOsTZ jXPhky' type='' aaname='' /&gt;" Guid="73133257-acbc-4fdb-9b3e-a50a0cc43c03" InformativeScreenshot="f6816697b402282f47bce663a70d08fe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <uix:NGetText ContinueOnError="True" DisplayName="Obtener texto 'Area privada'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[areaPrivada]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-lote-bogota-granjas-de-techo/495-M5584378" ContentHash="R1KmLOgolUaDYrhmxZ24vg" DesignTimeRectangle="266, 308, 642, 81" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' visibleinnertext='Área privada*m²' /&gt;" FuzzySelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' visibleinnertext='Área privada*m²' type='' aaname='' /&gt;" Guid="11be2f9c-4db1-4936-b4a6-509dbddbd0e9" ImageBase64="" InformativeScreenshot="fa33ae6bc04aa50aca9b8ff9aa5eef03.png" Reference="Ls64MbztdUqogCOKu_o7Gw/8F6QW2o0HE-w2c3BNytvCA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'USE'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[habitaciones]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-apartamento-bogota-la-estrada-2-habitaciones-2-banos-1-garajes/MC5606433" CvElementArea="670, 210, 246, 100" CvType="Button" DesignTimeRectangle="672, 368, 233, 81" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' parentclass='Li-sc-1knn373-0 ctJpwh' visibleinnertext='*Habitaci*' /&gt;" FuzzyAccuracy="1" FuzzySelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' parentclass='Li-sc-1knn373-0 ctJpwh' visibleinnertext='*Habitaci*' type='' aaname='' /&gt;" Guid="5d29c569-7683-4464-a7dc-aabee9229ae9" ImageBase64="" InformativeScreenshot="2c2c010ecec65137920546f614b46afa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="Selector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="787, 240, 33, 27" CvType="Icon" DesignTimeRectangle="790, 395, 25, 18" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;h2&amp;gt;span&amp;gt;svg&amp;gt;use' parentid='__next' tag='use' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='use' class='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAWCAYAAAA8VJfMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGeSURBVEhL7ZXPq0FBFMf9nVgQiW4pSVmgZOfHwo/cjYWwklJSrCzIRtY2FhbKwo+FhUI3X51Tbm/m8uSZvLd43zo1c74z99M5d+5cG35BNjnxCf0N6Hg8RiAQgN1ufzu8Xi/6/b6MsEIjkQharRZms9nb0el04PP5cLlcBIYFSou2262c/pHW6zVXfD6fhfxd6G634zFtarfbXPktut0u9vs9+8vl0uJTdYfDwdxPUMMwBMa30EQiAV3XUa1WUS6Xkclk+H33ej32c7kc0um0AKVco9Fg/yUotXez2cDlcuF0Ogk+wZvNJo+TySQGg4Hg0146QAR6qb20kdqUz+dl+ymUFIvFMJ1On0PJmEwmXF29Xkc4HEYoFEI2m0WpVEKlUuG2RaNRhlErg8Egr0ulUkJomoZ4PI5arcbQ0WiE4/FohRaLRW6L/AAV4fF4UCgUrFC3243FYmEaKjWfz/kA3mRCHQ4HVquVaagUfVpOp9Oc/0OV6iGUknS05UtbRQyHw/tQqlT+NamMh9CPt/frRa9adB36/X5zbrl7P6ErdQDV8pLJ0lkAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Área construida 54 m²'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[areaConstruida]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-apartamento-bogota-la-estrada-2-habitaciones-2-banos-1-garajes/MC5606433" DesignTimeRectangle="266, 218, 393, 81" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' parentclass='Li-sc-1knn373-0 ctJpwh' visibleinnertext='Área construida*' /&gt;" FuzzySelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' parentclass='Li-sc-1knn373-0 ctJpwh' visibleinnertext='Área construida*' type='' aaname='' /&gt;" Guid="0024d094-0429-4185-8eff-89a00d8a34eb" InformativeScreenshot="9152341ca65f0d809e7672072870c3c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText ContinueOnError="True" DisplayName="Obtener texto '3Estrato'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[estrato]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-lote-bogota-granjas-de-techo/495-M5584378" DesignTimeRectangle="1076, 1023, 196, 56" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' class='H2-kplljn-0 igCxTv card-text' parentclass='py-2 ' innertext='*Estrato' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' class='H2-kplljn-0 igCxTv card-text' parentclass='py-2 ' type='' /&gt;" Guid="c6ce4dde-bc9d-4e20-b06f-c794ce6a5d17" ImageBase64="" InformativeScreenshot="ff398b709a322ceab4350d27b1945447.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NGetText ContinueOnError="True" DisplayName="Get Text '2Baños'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[banyos]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-apartamento-bogota-la-estrada-2-habitaciones-2-banos-1-garajes/MC5606433" DesignTimeRectangle="920, 218, 142, 81" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' parentclass='Li-sc-1knn373-0 ctJpwh' visibleinnertext='*Baño*' /&gt;" FuzzySelectorArgument="&lt;webctrl class='py-2' parentid='__next' tag='DIV' parentclass='Li-sc-1knn373-0 ctJpwh' visibleinnertext='*Baño*' type='' aaname='' /&gt;" Guid="61edce29-4c6f-44ba-904f-ae4cbbbe75da" InformativeScreenshot="9380655c8fda31ae3d193fb47105d01d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <uix:NGetText DisplayName="Get Text 'Código inmueble11013-M5…'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[codigoInmueble]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-apartamento-bogota-ciudad-jardin-norte-1-habitaciones-1-banos/11013-M5606926" DesignTimeRectangle="227, 751, 271, 80" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='Col-sc-14ninbu-0 lfGZKA mb-3 pb-1 col-12 col-lg-3' innertext='Código inmueble*' parentclass='Row-sc-2hg243-0 iUVxfs row' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='Col-sc-14ninbu-0 lfGZKA mb-3 pb-1 col-12 col-lg-3' parentclass='Row-sc-2hg243-0 iUVxfs row' type='' aaname='' /&gt;" Guid="87754f5d-0cb8-4c40-9b4f-2af2b6824f90" InformativeScreenshot="25cf55b01eec5e0fc335ab035986e5b6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[precio]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(properties,"([0-9]+\.*)+").Value]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[areaConstruida]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(properties,"(?&lt;=(A|Á)rea Construida\s*)\d+(\.*\d+)*(?=\s*m(²|2))").Value]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[areaPrivada]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(properties,"(?&lt;=(Á|A)rea Privada\s*)\d+(\.*\d+)*(?=\s*m(²|2))").Value]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[estrato]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(properties,"(?&lt;=Estrato\s*)\d+").Value]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[habitaciones]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(properties,"\d+(?=\s*hab.)").Value]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[banyos]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(properties,"\d+(?=\s*ban.)").Value]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[parqueaderos]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(properties,"\d+(?=\s*par.)").Value]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="433.6,84.8" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NGetText DisplayName="Get Text '$ 2.600.000.000Administ…'" sap:VirtualizedContainerService.HintSize="382.4,76" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[properties]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-apartamento-bogota-bellavista-4-habitaciones-4-banos-3-garajes/44-M5573874?canary=true" DesignTimeRectangle="1358, 325, 370, 595" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' innertext='*¿Te interesa este inmueble?*' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' innertext='*¿Te interesa este inmueble?*' class='top-0 sticky bg-skeleton-100 grid gap-4 p-4 mt-4 w-[296px]' aaname='' /&gt;" Guid="8dd89909-1904-4c7e-b206-26b679cbafd8" InformativeScreenshot="3d746737ccc83f16bebb034e7f33e489.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NGetText>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uix:NGetText DisplayName="Get Text 'ASOCIACION PROFESIONAL'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="097c57e4-3253-4037-bdbc-9f864f5fd0be" TextString="[additionalDetails]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/inmueble/venta-apartamento-bogota-la-cabrera-3-habitaciones-5-banos-4-garajes/2359-M3545973?canary=true" DesignTimeRectangle="189, 556, 1150, 137" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' innertext='*Reportar anuncio' class='px-4 py-6 grid gap-2' parentclass='grid gap-4 min-h-[250px]' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DIV' innertext='*Reportar anuncio' class='px-4 py-6 grid gap-2' parentclass='grid gap-4 min-h-[250px]' aaname='' /&gt;" Guid="3b531605-6de3-4d00-acc6-574a3d321bde" InformativeScreenshot="060b87774b567878b71f3635dd975b5b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.metrocuadrado.com/inmueble/*' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="433.6,203.2" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(alt)][k(f4)][u(alt)][u(hk)]" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1204, 664" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFGSURBVDhPpdO9SsNQGMbxI6IWL0FcHFxqpVMQRxFFnPQeBN1cnKyKIKIX0QS8BAfFG1AnEfxYHMSWVnEpglKSgsT/054TovjR4Au/JmnePElOzjFxHP9L54dqlk0RG9hBCVspm1jHNvaxgMEkgIN5nOMFD3j6xiN07hnqWwvLJucCXMMyprAI3SVN/01jDpeoR74ZcwExTjHUfp8/ir4D1MLAFF1AA1eYsD2/Fn0nqIS+ybuAVxvg2Z4fi54eHKPaCkzBBbwhS8ARqlFgxjMHqOhrPwFjkP0JVPQd4h7JGGgQr9HtIF6gCc8FvOMM3X5GH3dIxiCCZpkmyTAKX4xgFJriq8jDQzITV6CZqFdRcg11S/sKr6CFEEu6TlxAH2axCy0WLag9S8daSFpoN7jF5KcAV5xQ0EBqK/3otVvdZAa5TkBsPgC9rKEkhhVTMAAAAABJRU5ErkJggg==" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="6da96482ded70cc993cb01ab76445f92.jpg" Selector="&lt;html app='chrome.exe' title='*' /&gt;" Title="Inmuebles en Venta en Bogotá D.C. Nuevos - Finca Raíz en Colombia" Url="[in_currentUrl]" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

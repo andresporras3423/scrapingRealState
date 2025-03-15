@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Ordenar por'",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "4Sz4z58xyESKhGIj_whCFQ",
+  "Reference": "Ls64MbztdUqogCOKu_o7Gw/4Sz4z58xyESKhGIj_whCFQ",
+  "ParentRef": "Ls64MbztdUqogCOKu_o7Gw/y2_leA8mHEuke2IwYuG2cA",
+  "Created": "2025-03-07T14:17:15.713537Z",
+  "Updated": "2025-03-07T14:17:15.713537Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
