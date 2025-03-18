@@ -99,6 +99,8 @@
       "Path": "fincaRaizAdditionalDetails.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "midTimeout&Sequence_4",
+        "shortTimeout&Sequence_4",
         "dt_inmuebleDetalles&Sequence_1",
         "moreBenefits&Sequence_2",
         "remodelado&Sequence_2",
@@ -116,6 +118,7 @@
         "ubicacionPrincipal&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [
+        "db_conn",
         "io_dr_inmuebleDetalles",
         "in_link"
       ],
@@ -130,6 +133,17 @@
         "db_conn&Sequence_1",
         "dr_inmuebleDetalles&Sequence_2",
         "dt_inmuebleDetalles&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "fincaRaiz - Copy (1).xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ExtractDataTable&Sequence_1",
+        "db_conn&Sequence_4"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

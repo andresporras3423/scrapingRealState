@@ -125,7 +125,7 @@
       <AssemblyReference>ExcelNumberFormat</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="fincaRaizAdditionalDetails" sap:VirtualizedContainerService.HintSize="1156.8000000000002,2133.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="fincaRaizAdditionalDetails" sap:VirtualizedContainerService.HintSize="1156.8000000000002,2359.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_inmuebleDetalles" />
     </Sequence.Variables>
@@ -134,19 +134,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Apartamento en Venta. Ref #FRO54FA4" sap:VirtualizedContainerService.HintSize="518.4,2110.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Apartamento en Venta. Ref #FRO54FA4" sap:VirtualizedContainerService.HintSize="518.4,2336" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap:VirtualizedContainerService.HintSize="484.8,1870.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence sap:VirtualizedContainerService.HintSize="484.8,2096" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="451.2,1808.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="451.2,2034.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="ubicacionPrincipal" />
                 <Variable x:TypeArguments="x:String" Name="estrato" />
@@ -196,20 +196,12 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NGetText>
-              <If Condition="[Convert.ToString(io_dr_inmuebleDetalles(&quot;ubicacion&quot;)) &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="417.6,1344.8" sap2010:WorkflowViewState.IdRef="If_1">
+              <If Condition="[Convert.ToString(io_dr_inmuebleDetalles(&quot;ubicacion&quot;)) &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="417.6,1568.8" sap2010:WorkflowViewState.IdRef="If_1">
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,1125.6" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,1348" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
-                      <Variable x:TypeArguments="x:Int32" Name="shortTimeout">
-                        <Variable.Default>
-                          <Literal x:TypeArguments="x:Int32" Value="1" />
-                        </Variable.Default>
-                      </Variable>
-                      <Variable x:TypeArguments="x:Int32" Name="midTimeout">
-                        <Variable.Default>
-                          <Literal x:TypeArguments="x:Int32" Value="2" />
-                        </Variable.Default>
-                      </Variable>
+                      <Variable x:TypeArguments="x:Int32" Default="1" Name="shortTimeout" />
+                      <Variable x:TypeArguments="x:Int32" Default="2" Name="midTimeout" />
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -227,7 +219,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Tipo'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;tipoInmueble&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Tipo'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;tipoInmueble&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvTextArea="756, 409, 497, 22" CvType="AnyWordGroup" DesignTimeRectangle="734, 402, 526, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' visibleinnertext='*Tipo de Inmueble*' parentclass='jsx-952467510 technical-sheet' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' visibleinnertext='*Tipo de Inmueble*' parentclass='jsx-952467510 technical-sheet' type='' aaname='' /&gt;" Guid="613017cd-751a-47c8-b313-c1a71a7d4670" ImageBase64="" InformativeScreenshot="b79ae36d17f80d833ce806b9463e3fe6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -238,7 +230,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Estado¡Pregúntale!'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;estadoInmueble&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Estado¡Pregúntale!'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;estadoInmueble&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvElementArea="289, 448, 306, 31" CvType="InputBox" DesignTimeRectangle="192, 453, 527, 34" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' innertext='*Estado*' parentclass='jsx-952467510 technical-sheet' visibleinnertext='*Estado*' class='ant-row ant-row-space-between' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' parentclass='jsx-952467510 technical-sheet' visibleinnertext='*Estado*' class='ant-row ant-row-space-between' type='' aaname='' /&gt;" Guid="2b3a46c5-5375-454f-b98f-c696c96888f1" ImageBase64="" InformativeScreenshot="be84b62fc7053e2b010722b3883aae7e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -249,7 +241,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Área'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;areaConstruida&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Área'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;areaConstruida&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvElementArea="377, 503, 238, 29" CvType="InputBox" DesignTimeRectangle="192, 507, 527, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' parentclass='jsx-952467510 technical-sheet' visibleinnertext='*Área Construida*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' parentclass='jsx-952467510 technical-sheet' visibleinnertext='*Área Construida*' type='' class='ant-row ant-row-space-between' aaname='' /&gt;" Guid="d766cfcc-2a9e-4f6d-8b4a-d3abdae90a92" ImageBase64="" InformativeScreenshot="f380af154e510044fa71855b4584fd69.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -260,7 +252,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Área Privada82.00 m2'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;areaPrivada&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Área Privada82.00 m2'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;areaPrivada&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvElementArea="894, 503, 259, 29" CvType="InputBox" DesignTimeRectangle="734, 507, 526, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='*Área Privada*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='*Área Privada*' type='' aaname='' /&gt;" Guid="2e0a2857-dc26-4680-bd1c-6b31d8f5813c" ImageBase64="" InformativeScreenshot="0d394581f905ecd88dc4c6880bcdfa77.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -271,7 +263,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Antigüedadmás'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;antiguedad&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Antigüedadmás'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;antiguedad&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvTextArea="215, 565, 496, 22" CvType="AnyWordGroup" DesignTimeRectangle="192, 558, 527, 32" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Antigüedad*' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Antigüedad*' aaname='' /&gt;" Guid="425892d2-4999-468f-a94b-a43441d272ec" ImageBase64="" InformativeScreenshot="88f8bd12acababc375d362cc6758d30d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -282,7 +274,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Parqueaderos1'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;parqueaderos&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Parqueaderos1'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;parqueaderos&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvElementArea="355, 606, 339, 28" CvType="InputBox" DesignTimeRectangle="192, 780, 527, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Parqueaderos*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Parqueaderos*' type='' aaname='' /&gt;" Guid="9bca66d0-e37a-476e-b0d6-381f3d7d1b41" ImageBase64="" InformativeScreenshot="060c10d7eec0aaae5b746c1c29f7a85c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.fincaraiz.com.co*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -293,7 +285,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Administración430,000…'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;administracion&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Administración430,000…'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;administracion&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvElementArea="906, 605, 236, 30" CvType="InputBox" DesignTimeRectangle="734, 610, 526, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Administración*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Administración*' type='' aaname='' /&gt;" Guid="1acc9cf4-f356-46da-8965-27fb4b5a7188" ImageBase64="" InformativeScreenshot="69f3a755a7574e2e59938bdf6d87e3e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -304,7 +296,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Piso N°5'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;pisoNumero&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Piso N°5'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;pisoNumero&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvElementArea="289, 655, 407, 29" CvType="InputBox" DesignTimeRectangle="192, 660, 527, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Piso N°*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Piso N°*' type='' aaname='' /&gt;" Guid="a9f27712-7cc8-4843-be64-df8ea397f8f0" ImageBase64="" InformativeScreenshot="6ae79803c07e23aad461b592c53e57d3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -315,7 +307,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Pisos interiores5'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;totalPisos&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Pisos interiores5'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;totalPisos&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvElementArea="903, 655, 332, 30" CvType="InputBox" DesignTimeRectangle="734, 660, 526, 31" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Pisos interiores*' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Pisos interiores*' type='' aaname='' /&gt;" Guid="a769da56-30f0-4cf9-bb00-ba275718efee" ImageBase64="" InformativeScreenshot="d8b8092f254f5cf2ce80fbe7f31547ae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -326,29 +318,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Acepta'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;aceptaPermuta&quot;)]" Timeout="[shortTimeout]" Version="V3">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvTextArea="215, 719, 495, 22" CvType="AnyWordGroup" DesignTimeRectangle="192, 711, 527, 34" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Acepta permuta*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Acepta permuta*' type='' aaname='' /&gt;" Guid="b3930c68-c80b-48e2-b717-0db4dfd4a911" ImageBase64="" InformativeScreenshot="fc437d525f240b26971a9bd9d2131465.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-                      </uix:NGetText.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text '• Remodelado¡Pregúntale!'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;remodelado&quot;)]" Timeout="[shortTimeout]" Version="V3">
-                      <uix:NGetText.Target>
-                        <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvTextArea="757, 719, 495, 22" CvType="AnyWordGroup" DesignTimeRectangle="734, 711, 526, 34" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Remodelado*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Remodelado*' type='' aaname='' /&gt;" Guid="0ec06e6f-be05-467e-80f8-ef3e94639270" ImageBase64="" InformativeScreenshot="fd4ced3ba6da3bf118572d979a21325a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
-                      </uix:NGetText.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </uix:NGetText>
-                    <uix:NGetText DisplayName="Get Text '• Baños2'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;banyos&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText DisplayName="Get Text '• Baños2'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;banyos&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvTextArea="757, 542, 497, 18" CvType="AnyWordGroup" DesignTimeRectangle="734, 536, 526, 34" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Baños*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Baños*' type='' aaname='' /&gt;" Guid="001a4372-5126-4295-b6f6-2ef93d9cd688" ImageBase64="" InformativeScreenshot="372b5f5ae3bedb0daa0f7e0ccc683de5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -359,7 +329,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText DisplayName="Get Text '• Habitaciones4'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;habitaciones&quot;)]" Timeout="[shortTimeout]" Version="V3">
+                    <uix:NGetText DisplayName="Get Text '• Habitaciones4'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;habitaciones&quot;)]" Timeout="[shortTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" CvTextArea="757, 647, 497, 18" CvType="AnyWordGroup" DesignTimeRectangle="734, 641, 526, 32" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Habitaciones*' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='__next' tag='DIV' class='ant-row ant-row-space-between' parentclass='jsx-952467510 technical-sheet' visibleinnertext='•*Habitaciones*' type='' aaname='' /&gt;" Guid="f8cdbd0f-9e49-4f7a-a933-f9db99fd0da7" ImageBase64="" InformativeScreenshot="50d2bee4f086fda9dc8140a6398cfd7a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
                       </uix:NGetText.Target>
@@ -370,7 +340,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Comodidades de'" sap:VirtualizedContainerService.HintSize="382.4,56.8" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;comodidades&quot;)]" Timeout="[midTimeout]" Version="V3">
+                    <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Comodidades de'" sap:VirtualizedContainerService.HintSize="382.4,84.8" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="c2b7d8b7-62e4-4ae1-869c-b6825d251a9c" TextString="[io_dr_inmuebleDetalles(&quot;comodidades&quot;)]" Timeout="[midTimeout]" Version="V3">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/apartamento-en-venta/192111458" DesignTimeRectangle="197, 850, 1058, 193" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='ant-row' parentid='__next' tag='DIV' parentclass='ant-col ant-col-24' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ant-row' parentid='__next' tag='DIV' parentclass='ant-col ant-col-24' type='' aaname='' /&gt;" Guid="86973ab6-bc8e-4a76-9875-1d66ed145633" ImageBase64="" InformativeScreenshot="1e0f004bc56cd42c06c4376474c16e82.png" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://www.fincaraiz.com.co/*' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive">
                           <uix:TargetAnchorable.Anchors>
