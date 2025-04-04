@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Check App State 'DIV'",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "_tsBBV48R0mzVXPNr6vfTg",
+  "Reference": "Ls64MbztdUqogCOKu_o7Gw/_tsBBV48R0mzVXPNr6vfTg",
+  "ParentRef": "Ls64MbztdUqogCOKu_o7Gw/y2_leA8mHEuke2IwYuG2cA",
+  "Created": "2025-03-27T13:26:20.8348802Z",
+  "Updated": "2025-03-27T13:26:20.8348802Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

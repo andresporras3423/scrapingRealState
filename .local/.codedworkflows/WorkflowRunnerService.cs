@@ -37,23 +37,6 @@ namespace scrapingRealState
         }
 
         /// <summary>
-        /// Invokes the ExtractCurrentRealState.xaml
-        /// </summary>
-        public void ExtractCurrentRealState(string in_currentUrl)
-        {
-            var result = _services.WorkflowInvocationService.RunWorkflow(@"ExtractCurrentRealState.xaml", new Dictionary<string, object>{{"in_currentUrl", in_currentUrl}}, default, default, default, GetAssemblyName());
-        }
-
-        /// <summary>
-        /// Invokes the ExtractCurrentRealState.xaml
-        /// </summary>
-		/// <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
-        public void ExtractCurrentRealState(string in_currentUrl, System.Boolean isolated)
-        {
-            var result = _services.WorkflowInvocationService.RunWorkflow(@"ExtractCurrentRealState.xaml", new Dictionary<string, object>{{"in_currentUrl", in_currentUrl}}, default, isolated, default, GetAssemblyName());
-        }
-
-        /// <summary>
         /// Invokes the Main.xaml
         /// </summary>
         public void Main()
@@ -68,6 +51,57 @@ namespace scrapingRealState
         public void Main(System.Boolean isolated)
         {
             var result = _services.WorkflowInvocationService.RunWorkflow(@"Main.xaml", new Dictionary<string, object>{}, default, isolated, default, GetAssemblyName());
+        }
+
+        /// <summary>
+        /// Invokes the fincaRaiz.xaml
+        /// </summary>
+        public void fincaRaiz()
+        {
+            var result = _services.WorkflowInvocationService.RunWorkflow(@"fincaRaiz.xaml", new Dictionary<string, object>{}, default, default, default, GetAssemblyName());
+        }
+
+        /// <summary>
+        /// Invokes the fincaRaiz.xaml
+        /// </summary>
+		/// <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
+        public void fincaRaiz(System.Boolean isolated)
+        {
+            var result = _services.WorkflowInvocationService.RunWorkflow(@"fincaRaiz.xaml", new Dictionary<string, object>{}, default, isolated, default, GetAssemblyName());
+        }
+
+        /// <summary>
+        /// Invokes the fincaRaiz - Copy (1).xaml
+        /// </summary>
+        public void fincaRaiz___Copy__1_()
+        {
+            var result = _services.WorkflowInvocationService.RunWorkflow(@"fincaRaiz - Copy (1).xaml", new Dictionary<string, object>{}, default, default, default, GetAssemblyName());
+        }
+
+        /// <summary>
+        /// Invokes the fincaRaiz - Copy (1).xaml
+        /// </summary>
+		/// <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
+        public void fincaRaiz___Copy__1_(System.Boolean isolated)
+        {
+            var result = _services.WorkflowInvocationService.RunWorkflow(@"fincaRaiz - Copy (1).xaml", new Dictionary<string, object>{}, default, isolated, default, GetAssemblyName());
+        }
+
+        /// <summary>
+        /// Invokes the ExtractCurrentRealState.xaml
+        /// </summary>
+        public void ExtractCurrentRealState(string in_currentUrl)
+        {
+            var result = _services.WorkflowInvocationService.RunWorkflow(@"ExtractCurrentRealState.xaml", new Dictionary<string, object>{{"in_currentUrl", in_currentUrl}}, default, default, default, GetAssemblyName());
+        }
+
+        /// <summary>
+        /// Invokes the ExtractCurrentRealState.xaml
+        /// </summary>
+		/// <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
+        public void ExtractCurrentRealState(string in_currentUrl, System.Boolean isolated)
+        {
+            var result = _services.WorkflowInvocationService.RunWorkflow(@"ExtractCurrentRealState.xaml", new Dictionary<string, object>{{"in_currentUrl", in_currentUrl}}, default, isolated, default, GetAssemblyName());
         }
 
         /// <summary>
@@ -102,57 +136,6 @@ namespace scrapingRealState
         public void listFiscaRaizAdditionalDetails(System.Boolean isolated)
         {
             var result = _services.WorkflowInvocationService.RunWorkflow(@"listFiscaRaizAdditionalDetails.xaml", new Dictionary<string, object>{}, default, isolated, default, GetAssemblyName());
-        }
-
-        /// <summary>
-        /// Invokes the fincaRaiz - Copy (1).xaml
-        /// </summary>
-        public void fincaRaiz___Copy__1_()
-        {
-            var result = _services.WorkflowInvocationService.RunWorkflow(@"fincaRaiz - Copy (1).xaml", new Dictionary<string, object>{}, default, default, default, GetAssemblyName());
-        }
-
-        /// <summary>
-        /// Invokes the fincaRaiz - Copy (1).xaml
-        /// </summary>
-		/// <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
-        public void fincaRaiz___Copy__1_(System.Boolean isolated)
-        {
-            var result = _services.WorkflowInvocationService.RunWorkflow(@"fincaRaiz - Copy (1).xaml", new Dictionary<string, object>{}, default, isolated, default, GetAssemblyName());
-        }
-
-        /// <summary>
-        /// Invokes the fincaRaiz.xaml
-        /// </summary>
-        public void fincaRaiz()
-        {
-            var result = _services.WorkflowInvocationService.RunWorkflow(@"fincaRaiz.xaml", new Dictionary<string, object>{}, default, default, default, GetAssemblyName());
-        }
-
-        /// <summary>
-        /// Invokes the fincaRaiz.xaml
-        /// </summary>
-		/// <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
-        public void fincaRaiz(System.Boolean isolated)
-        {
-            var result = _services.WorkflowInvocationService.RunWorkflow(@"fincaRaiz.xaml", new Dictionary<string, object>{}, default, isolated, default, GetAssemblyName());
-        }
-
-        /// <summary>
-        /// Invokes the test.xaml
-        /// </summary>
-        public void test()
-        {
-            var result = _services.WorkflowInvocationService.RunWorkflow(@"test.xaml", new Dictionary<string, object>{}, default, default, default, GetAssemblyName());
-        }
-
-        /// <summary>
-        /// Invokes the test.xaml
-        /// </summary>
-		/// <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
-        public void test(System.Boolean isolated)
-        {
-            var result = _services.WorkflowInvocationService.RunWorkflow(@"test.xaml", new Dictionary<string, object>{}, default, isolated, default, GetAssemblyName());
         }
 
         private string GetAssemblyName()

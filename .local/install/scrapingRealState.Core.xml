@@ -15,6 +15,39 @@
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
+        <member name="M:scrapingRealState.WorkflowRunnerService.Main">
+            <summary>
+            Invokes the Main.xaml
+            </summary>
+        </member>
+        <member name="M:scrapingRealState.WorkflowRunnerService.Main(System.Boolean)">
+            <summary>
+            Invokes the Main.xaml
+            </summary>
+            <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
+        </member>
+        <member name="M:scrapingRealState.WorkflowRunnerService.fincaRaiz">
+            <summary>
+            Invokes the fincaRaiz.xaml
+            </summary>
+        </member>
+        <member name="M:scrapingRealState.WorkflowRunnerService.fincaRaiz(System.Boolean)">
+            <summary>
+            Invokes the fincaRaiz.xaml
+            </summary>
+            <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
+        </member>
+        <member name="M:scrapingRealState.WorkflowRunnerService.fincaRaiz___Copy__1_">
+            <summary>
+            Invokes the fincaRaiz - Copy (1).xaml
+            </summary>
+        </member>
+        <member name="M:scrapingRealState.WorkflowRunnerService.fincaRaiz___Copy__1_(System.Boolean)">
+            <summary>
+            Invokes the fincaRaiz - Copy (1).xaml
+            </summary>
+            <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
+        </member>
         <member name="M:scrapingRealState.WorkflowRunnerService.ExtractCurrentRealState(System.String)">
             <summary>
             Invokes the ExtractCurrentRealState.xaml
@@ -26,14 +59,14 @@
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
-        <member name="M:scrapingRealState.WorkflowRunnerService.Main">
+        <member name="M:scrapingRealState.WorkflowRunnerService.test">
             <summary>
-            Invokes the Main.xaml
+            Invokes the test.xaml
             </summary>
         </member>
-        <member name="M:scrapingRealState.WorkflowRunnerService.Main(System.Boolean)">
+        <member name="M:scrapingRealState.WorkflowRunnerService.test(System.Boolean)">
             <summary>
-            Invokes the Main.xaml
+            Invokes the test.xaml
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
@@ -59,36 +92,14 @@
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
-        <member name="M:scrapingRealState.WorkflowRunnerService.fincaRaiz___Copy__1_">
+        <member name="M:scrapingRealState.WorkflowRunnerService.testAutoPilot">
             <summary>
-            Invokes the fincaRaiz - Copy (1).xaml
+            Invokes the testAutoPilot.cs
             </summary>
         </member>
-        <member name="M:scrapingRealState.WorkflowRunnerService.fincaRaiz___Copy__1_(System.Boolean)">
+        <member name="M:scrapingRealState.WorkflowRunnerService.testAutoPilot(System.Boolean)">
             <summary>
-            Invokes the fincaRaiz - Copy (1).xaml
-            </summary>
-            <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
-        </member>
-        <member name="M:scrapingRealState.WorkflowRunnerService.fincaRaiz">
-            <summary>
-            Invokes the fincaRaiz.xaml
-            </summary>
-        </member>
-        <member name="M:scrapingRealState.WorkflowRunnerService.fincaRaiz(System.Boolean)">
-            <summary>
-            Invokes the fincaRaiz.xaml
-            </summary>
-            <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
-        </member>
-        <member name="M:scrapingRealState.WorkflowRunnerService.test">
-            <summary>
-            Invokes the test.xaml
-            </summary>
-        </member>
-        <member name="M:scrapingRealState.WorkflowRunnerService.test(System.Boolean)">
-            <summary>
-            Invokes the test.xaml
+            Invokes the testAutoPilot.cs
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>

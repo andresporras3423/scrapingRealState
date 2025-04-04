@@ -59,6 +59,27 @@ namespace scrapingRealState._Implementation
 
     namespace _NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__
     {
+        public class __Check_App_State__DIV_ : IElementDescriptor
+        {
+            private readonly IScreenDescriptor _screenDescriptor;
+            private readonly IElementDescriptor _parentElementDescriptor;
+            private readonly IElementDescriptorDefinition _elementDescriptor;
+            public IElementDescriptorDefinition GetDefinition()
+            {
+                return _elementDescriptor;
+            }
+
+            public __Check_App_State__DIV_(IScreenDescriptor screenDescriptor, IElementDescriptor parentElementDescriptor)
+            {
+                _screenDescriptor = screenDescriptor;
+                _parentElementDescriptor = parentElementDescriptor;
+                _elementDescriptor = new ElementDescriptorDefinition{Reference = "Ls64MbztdUqogCOKu_o7Gw/_tsBBV48R0mzVXPNr6vfTg", DisplayName = "Check App State 'DIV'", Element = this, ParentElement = _parentElementDescriptor, Screen = screenDescriptor};
+            }
+        }
+    }
+
+    namespace _NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__
+    {
         public class __Click__Ordenar_por_ : IElementDescriptor
         {
             private readonly IScreenDescriptor _screenDescriptor;
@@ -113,11 +134,14 @@ namespace scrapingRealState._Implementation
             {
                 _screenDescriptor = new ScreenDescriptorDefinition{Reference = "Ls64MbztdUqogCOKu_o7Gw/y2_leA8mHEuke2IwYuG2cA", DisplayName = "Chrome Inmuebles en Venta en Bogotá D.C. Nuevos -", Screen = this};
                 Area_privada = new _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Area_privada(this, null);
+                Check_App_State__DIV_ = new _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Check_App_State__DIV_(this, null);
                 Click__Ordenar_por_ = new _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Click__Ordenar_por_(this, null);
                 Get_Text__Ubicación_Principal_ = new _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Get_Text__Ubicación_Principal_(this, null);
             }
 
             public _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Area_privada Area_privada { get; private set; }
+
+            public _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Check_App_State__DIV_ Check_App_State__DIV_ { get; private set; }
 
             public _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Click__Ordenar_por_ Click__Ordenar_por_ { get; private set; }
 

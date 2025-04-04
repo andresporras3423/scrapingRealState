@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="L8-SUSm81kK-Jjamz105Og" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://fincaraiz-19943585.hs-sites.com/hs-web-interactive-19943585-186407641732?ordenListado=3&amp;utk=e477d6a50b987f403ba64edab0fbad3a" CvElementArea="1101, 355, 42, 41" CvType="CloseButton" DesignTimeRectangle="1100, 353, 44, 44" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl aria-role='dialog' tag='IFRAME' /&gt;&lt;webctrl class='button-container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='dialog' tag='IFRAME' /&gt;&lt;webctrl class='button-container' tag='DIV' type='' aaname='    ' /&gt;" Guid="cad35c72-ea86-4b05-9d9e-8ea6f08535b0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Venta en Bogotá' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="68af4189adaddfec7d17ab055162ce1d.png" xmlns="">0CF-w-NsHgEu0_aN5PD86FA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

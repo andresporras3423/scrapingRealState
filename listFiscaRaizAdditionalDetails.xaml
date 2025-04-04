@@ -92,7 +92,7 @@
       <AssemblyReference>scrapingRealState.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="listFiscaRaizAdditionalDetails" sap:VirtualizedContainerService.HintSize="1156.8000000000002,1098.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="listFiscaRaizAdditionalDetails" sap:VirtualizedContainerService.HintSize="1156.8000000000002,1245.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_inmuebleDetalles" />
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="db_conn" />
@@ -164,7 +164,12 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="StoredProcedure" DisplayName="Run Query" ExistingDbConnection="[db_conn]" sap:VirtualizedContainerService.HintSize="468.8,138.4" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" Sql="update_detalles_viviendas">
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="StoredProcedure" DisplayName="Run Query" ExistingDbConnection="[db_conn]" sap:VirtualizedContainerService.HintSize="468.8,147.2" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" Sql="update_detalles_viviendas">
+      <ui:ExecuteQuery.Parameters>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:ExecuteQuery.Parameters>
+    </ui:ExecuteQuery>
+    <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="StoredProcedure" DisplayName="Run Query" ExistingDbConnection="[db_conn]" sap:VirtualizedContainerService.HintSize="468.8,138.4" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" Sql="delete_unvalid_viviendas">
       <ui:ExecuteQuery.Parameters>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:ExecuteQuery.Parameters>
