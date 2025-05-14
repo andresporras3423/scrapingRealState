@@ -17,22 +17,16 @@ namespace scrapingRealState._Implementation
     internal class ScreenDescriptorDefinition : IScreenDescriptorDefinition
     {
         public IScreenDescriptor Screen { get; set; }
-
         public string Reference { get; set; }
-
         public string DisplayName { get; set; }
     }
 
     internal class ElementDescriptorDefinition : IElementDescriptorDefinition
     {
         public IScreenDescriptor Screen { get; set; }
-
         public string Reference { get; set; }
-
         public string DisplayName { get; set; }
-
         public IElementDescriptor ParentElement { get; set; }
-
         public IElementDescriptor Element { get; set; }
     }
 
@@ -43,6 +37,7 @@ namespace scrapingRealState._Implementation
             private readonly IScreenDescriptor _screenDescriptor;
             private readonly IElementDescriptor _parentElementDescriptor;
             private readonly IElementDescriptorDefinition _elementDescriptor;
+
             public IElementDescriptorDefinition GetDefinition()
             {
                 return _elementDescriptor;
@@ -52,7 +47,14 @@ namespace scrapingRealState._Implementation
             {
                 _screenDescriptor = screenDescriptor;
                 _parentElementDescriptor = parentElementDescriptor;
-                _elementDescriptor = new ElementDescriptorDefinition{Reference = "Ls64MbztdUqogCOKu_o7Gw/8F6QW2o0HE-w2c3BNytvCA", DisplayName = "Area privada", Element = this, ParentElement = _parentElementDescriptor, Screen = screenDescriptor};
+                _elementDescriptor = new ElementDescriptorDefinition
+                {
+                    Reference = "Ls64MbztdUqogCOKu_o7Gw/8F6QW2o0HE-w2c3BNytvCA",
+                    DisplayName = "Area privada",
+                    Element = this,
+                    ParentElement = _parentElementDescriptor,
+                    Screen = screenDescriptor
+                };
             }
         }
     }
@@ -64,6 +66,7 @@ namespace scrapingRealState._Implementation
             private readonly IScreenDescriptor _screenDescriptor;
             private readonly IElementDescriptor _parentElementDescriptor;
             private readonly IElementDescriptorDefinition _elementDescriptor;
+
             public IElementDescriptorDefinition GetDefinition()
             {
                 return _elementDescriptor;
@@ -73,7 +76,14 @@ namespace scrapingRealState._Implementation
             {
                 _screenDescriptor = screenDescriptor;
                 _parentElementDescriptor = parentElementDescriptor;
-                _elementDescriptor = new ElementDescriptorDefinition{Reference = "Ls64MbztdUqogCOKu_o7Gw/_tsBBV48R0mzVXPNr6vfTg", DisplayName = "Check App State 'DIV'", Element = this, ParentElement = _parentElementDescriptor, Screen = screenDescriptor};
+                _elementDescriptor = new ElementDescriptorDefinition
+                {
+                    Reference = "Ls64MbztdUqogCOKu_o7Gw/_tsBBV48R0mzVXPNr6vfTg",
+                    DisplayName = "Check App State 'DIV'",
+                    Element = this,
+                    ParentElement = _parentElementDescriptor,
+                    Screen = screenDescriptor
+                };
             }
         }
     }
@@ -85,6 +95,7 @@ namespace scrapingRealState._Implementation
             private readonly IScreenDescriptor _screenDescriptor;
             private readonly IElementDescriptor _parentElementDescriptor;
             private readonly IElementDescriptorDefinition _elementDescriptor;
+
             public IElementDescriptorDefinition GetDefinition()
             {
                 return _elementDescriptor;
@@ -94,7 +105,14 @@ namespace scrapingRealState._Implementation
             {
                 _screenDescriptor = screenDescriptor;
                 _parentElementDescriptor = parentElementDescriptor;
-                _elementDescriptor = new ElementDescriptorDefinition{Reference = "Ls64MbztdUqogCOKu_o7Gw/4Sz4z58xyESKhGIj_whCFQ", DisplayName = "Click 'Ordenar por'", Element = this, ParentElement = _parentElementDescriptor, Screen = screenDescriptor};
+                _elementDescriptor = new ElementDescriptorDefinition
+                {
+                    Reference = "Ls64MbztdUqogCOKu_o7Gw/4Sz4z58xyESKhGIj_whCFQ",
+                    DisplayName = "Click 'Ordenar por'",
+                    Element = this,
+                    ParentElement = _parentElementDescriptor,
+                    Screen = screenDescriptor
+                };
             }
         }
     }
@@ -106,6 +124,7 @@ namespace scrapingRealState._Implementation
             private readonly IScreenDescriptor _screenDescriptor;
             private readonly IElementDescriptor _parentElementDescriptor;
             private readonly IElementDescriptorDefinition _elementDescriptor;
+
             public IElementDescriptorDefinition GetDefinition()
             {
                 return _elementDescriptor;
@@ -115,7 +134,14 @@ namespace scrapingRealState._Implementation
             {
                 _screenDescriptor = screenDescriptor;
                 _parentElementDescriptor = parentElementDescriptor;
-                _elementDescriptor = new ElementDescriptorDefinition{Reference = "Ls64MbztdUqogCOKu_o7Gw/9qqXn75FKU-YIswj-aUG8g", DisplayName = "Get Text 'Ubicación Principal'", Element = this, ParentElement = _parentElementDescriptor, Screen = screenDescriptor};
+                _elementDescriptor = new ElementDescriptorDefinition
+                {
+                    Reference = "Ls64MbztdUqogCOKu_o7Gw/9qqXn75FKU-YIswj-aUG8g",
+                    DisplayName = "Get Text 'Ubicación Principal'",
+                    Element = this,
+                    ParentElement = _parentElementDescriptor,
+                    Screen = screenDescriptor
+                };
             }
         }
     }
@@ -130,9 +156,15 @@ namespace scrapingRealState._Implementation
             }
 
             private readonly ScreenDescriptorDefinition _screenDescriptor;
+
             public __Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__()
             {
-                _screenDescriptor = new ScreenDescriptorDefinition{Reference = "Ls64MbztdUqogCOKu_o7Gw/y2_leA8mHEuke2IwYuG2cA", DisplayName = "Chrome Inmuebles en Venta en Bogotá D.C. Nuevos -", Screen = this};
+                _screenDescriptor = new ScreenDescriptorDefinition
+                {
+                    Reference = "Ls64MbztdUqogCOKu_o7Gw/y2_leA8mHEuke2IwYuG2cA",
+                    DisplayName = "Chrome Inmuebles en Venta en Bogotá D.C. Nuevos -",
+                    Screen = this
+                };
                 Area_privada = new _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Area_privada(this, null);
                 Check_App_State__DIV_ = new _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Check_App_State__DIV_(this, null);
                 Click__Ordenar_por_ = new _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Click__Ordenar_por_(this, null);
@@ -140,11 +172,8 @@ namespace scrapingRealState._Implementation
             }
 
             public _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Area_privada Area_privada { get; private set; }
-
             public _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Check_App_State__DIV_ Check_App_State__DIV_ { get; private set; }
-
             public _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Click__Ordenar_por_ Click__Ordenar_por_ { get; private set; }
-
             public _Implementation._NewApplication._Chrome_Inmuebles_en_Venta_en_Bogotá_D_C__Nuevos__.__Get_Text__Ubicación_Principal_ Get_Text__Ubicación_Principal_ { get; private set; }
         }
     }

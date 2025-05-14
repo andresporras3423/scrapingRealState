@@ -26,7 +26,14 @@ namespace scrapingRealState
         private Lazy<ConnectionsManager> _connectionsManagerLazy;
         public CodedWorkflow()
         {
-            _ = new System.Type[]{typeof(UiPath.Mail.Activities.Api.IMailService), typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.Excel.Activities.API.IExcelService), typeof(UiPath.Core.Activities.API.ISystemService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService)};
+            _ = new System.Type[]
+            {
+                typeof(UiPath.Excel.Activities.API.IExcelService),
+                typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService),
+                typeof(UiPath.Mail.Activities.Api.IMailService),
+                typeof(UiPath.Testing.API.ITestingService),
+                typeof(UiPath.Core.Activities.API.ISystemService)
+            };
             _workflowRunnerServiceLazy = new Lazy<global::scrapingRealState.WorkflowRunnerService>(() => new global::scrapingRealState.WorkflowRunnerService(this.services));
 #pragma warning disable
             _connectionsManagerLazy = new Lazy<ConnectionsManager>(() => new ConnectionsManager(serviceContainer));
@@ -38,19 +45,15 @@ namespace scrapingRealState
 #pragma warning disable
         protected UiPath.Excel.Activities.API.IExcelService excel { get => serviceContainer.Resolve<UiPath.Excel.Activities.API.IExcelService>() ; }
 #pragma warning restore
-
 #pragma warning disable
         protected UiPath.Mail.Activities.Api.IMailService mail { get => serviceContainer.Resolve<UiPath.Mail.Activities.Api.IMailService>() ; }
 #pragma warning restore
-
 #pragma warning disable
         protected UiPath.Core.Activities.API.ISystemService system { get => serviceContainer.Resolve<UiPath.Core.Activities.API.ISystemService>() ; }
 #pragma warning restore
-
 #pragma warning disable
         protected UiPath.Testing.API.ITestingService testing { get => serviceContainer.Resolve<UiPath.Testing.API.ITestingService>() ; }
 #pragma warning restore
-
 #pragma warning disable
         protected UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService uiAutomation { get => serviceContainer.Resolve<UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService>() ; }
 #pragma warning restore
