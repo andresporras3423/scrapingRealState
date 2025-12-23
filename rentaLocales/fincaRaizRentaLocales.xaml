@@ -1,0 +1,233 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="fincaRaiz" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="fincaRaiz_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>scrapingRealState.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="fincaRaiz" sap:VirtualizedContainerService.HintSize="1060.8,1981.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Utilizar Navegador Chrome: Locales en Arriendo en Bogotá, d.c." sap:VirtualizedContainerService.HintSize="1060.8,1958.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="221fb55e-b3e9-4a01-b2d0-fdfb10205c48" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1027.2,1714.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RetryScope ContinueOnError="True" DisplayName="Reintentar ámbito" sap:VirtualizedContainerService.HintSize="993.6,759.2" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Acción" sap:VirtualizedContainerService.HintSize="952,89.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean">
+                  <uix:NCheckState DisplayName="Check App State 'Check App State 'DIV''" sap:VirtualizedContainerService.HintSize="952,473.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="221fb55e-b3e9-4a01-b2d0-fdfb10205c48" Version="V3">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,252" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Check App State 'DIV''" sap:VirtualizedContainerService.HintSize="416,186.4" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="221fb55e-b3e9-4a01-b2d0-fdfb10205c48" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/arriendo/locales/bogota-dc?&amp;ordenListado=3" CvElementArea="1290, 386, 32, 34" CvType="CloseButton" DesignTimeRectangle="1298, 395, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='bodyTag' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='bodyTag' tag='svg' type='' class='' aaname='' /&gt;" Guid="41ef74d6-8928-4ec4-ac80-ca2931f099d6" InformativeScreenshot="f55e385091ed34386bd231f58ec046ae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Locales en Arriendo en Bogotá, d.c.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="618, 431, 700, 366" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='bodyTag' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='bodyTag' tag='IMG' type='' class='jsx-1447849722 ' aaname='Feria de Cartagena 1' /&gt;" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,96" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/arriendo/locales/bogota-dc?&amp;ordenListado=3" CvElementArea="1290, 386, 32, 34" CvType="CloseButton" DesignTimeRectangle="1298, 395, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='bodyTag' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='bodyTag' tag='svg' type='' class='' aaname='' /&gt;" Guid="cb98604a-2797-4e0d-b735-1cc1432ed8cd" InformativeScreenshot="d65c9f029f6cc276de37e4e3866a3e72.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Locales en Arriendo en Bogotá, d.c.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="618, 431, 700, 366" ElementType="Icon" FullSelectorArgument="&lt;webctrl parentid='bodyTag' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='bodyTag' tag='IMG' type='' class='jsx-1447849722 ' aaname='Feria de Cartagena 1' /&gt;" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                </ActivityFunc>
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DelayBetweenPages="3" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='descr'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='link'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="993.6,193.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="1000" ScopeIdentifier="221fb55e-b3e9-4a01-b2d0-fdfb10205c48" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.fincaraiz.com.co/arriendo/locales/bogota-dc?&amp;ordenListado=3" CvElementArea="1143, 845, 35, 33" CvTextArea="1154, 856, 12, 11" CvTextArgument="&gt;" CvType="Button" DesignTimeRectangle="1146, 847, 30, 30" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='&amp;gt;' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='&amp;gt;' tag='A' type='' class='ant-pagination-item-link CO' check:innerText='&amp;gt;' /&gt;" Guid="99269f11-22e8-4378-afc8-6ccbb5f45b24" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Locales en Arriendo en Bogotá, d.c.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="361, 394, 1200, 6153" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" Guid="4bd04218-abd1-452b-b890-25cf84b5d6a5" InformativeScreenshot="d142f0f54c80324232d1d04c4511a715.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Locales en Arriendo en Bogotá, d.c. página 46' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <Sequence sap:VirtualizedContainerService.HintSize="993.6,696" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="ui:DatabaseConnection" Name="db_conn" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="416,96" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="Microsoft.Data.SqlClient" ConnectionString="Data Source=DESKTOP-KNKLQ23\MSSQLSERVER01;Initial Catalog=Inmuebles;Integrated Security=True;Encrypt=False" DatabaseConnection="[db_conn]" />
+              <ui:ExecuteNonQuery AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Run Command" ExistingDbConnection="[db_conn]" sap:VirtualizedContainerService.HintSize="416,155.2" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_1" Sql="truncate table stage.datosLocales">
+                <ui:ExecuteNonQuery.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:ExecuteNonQuery.Parameters>
+              </ui:ExecuteNonQuery>
+              <ui:BulkInsert AffectedRecords="{x:Null}" ContinueOnError="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Bulk Insert" ExistingDbConnection="[db_conn]" sap:VirtualizedContainerService.HintSize="416,202.4" sap2010:WorkflowViewState.IdRef="BulkInsert_1" TableName="stage.datosLocales" />
+              <ui:ExecuteQuery ContinueOnError="{x:Null}" DataTable="{x:Null}" TimeoutMS="{x:Null}" CommandType="StoredProcedure" DisplayName="Run Query" ExistingDbConnection="[db_conn]" sap:VirtualizedContainerService.HintSize="416,148" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" Sql="update_locales">
+                <ui:ExecuteQuery.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:ExecuteQuery.Parameters>
+              </ui:ExecuteQuery>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" sap2010:WorkflowViewState.IdRef="TargetApp_2" InformativeScreenshot="7db6a7a23c9613f25b8d580e43280837.jpg" Selector="&lt;html app='chrome.exe' title='Locales en Arriendo en Bogotá, d.c.' /&gt;" Title="Venta en Colombia" Url="https://www.fincaraiz.com.co/arriendo/locales/bogota-dc?&amp;ordenListado=3" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

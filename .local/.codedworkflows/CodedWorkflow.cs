@@ -28,11 +28,11 @@ namespace scrapingRealState
         {
             _ = new System.Type[]
             {
+                typeof(UiPath.Core.Activities.API.ISystemService),
                 typeof(UiPath.Excel.Activities.API.IExcelService),
-                typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService),
                 typeof(UiPath.Mail.Activities.Api.IMailService),
                 typeof(UiPath.Testing.API.ITestingService),
-                typeof(UiPath.Core.Activities.API.ISystemService)
+                typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService)
             };
             _workflowRunnerServiceLazy = new Lazy<global::scrapingRealState.WorkflowRunnerService>(() => new global::scrapingRealState.WorkflowRunnerService(this.services));
 #pragma warning disable

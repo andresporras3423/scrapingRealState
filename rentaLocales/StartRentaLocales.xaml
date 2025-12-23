@@ -1,0 +1,230 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1410,3749" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>scrapingRealState.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Abre Chrome, extrae datos de bienes raíces y invoca el flujo de trabajo de procesamiento" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1281,1808" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Utilizar Navegador Chrome: Locales en Arriendo en Bogotá D.C. - Inmuebles Nuevos y Usados" sap:VirtualizedContainerService.HintSize="562,1617" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="54f55a18-85b4-4ff0-ab9f-76b0c5026d7d" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="528,1363" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="492,61" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="449.6,240.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NSelectItem DisplayName="Select Item 'Ordenar por'" sap:VirtualizedContainerService.HintSize="416,180.8" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Más reciente" ScopeIdentifier="54f55a18-85b4-4ff0-ab9f-76b0c5026d7d" Version="V3">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="0" />
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/venta/bogota?canary=true" CvElementArea="1593, 235, 212, 63" CvType="InputBox" DesignTimeRectangle="1592, 236, 212, 62" DesignTimeScaleFactor="1.25" ElementType="InputBox" Guid="d6e7b757-63c8-45cb-9594-fa13e588a541" InformativeScreenshot="b0a45a3baa1041fc0dcab27c5c06c03c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V3" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="1604, 256, 124, 24" CvTextArgument="Ordenar por" CvType="Text" DesignTimeRectangle="1604, 257, 123, 23" ElementType="Text" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NSelectItem.Target>
+                  </uix:NSelectItem>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="492,454" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,241" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ordenar por'" sap:VirtualizedContainerService.HintSize="416,181" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="54f55a18-85b4-4ff0-ab9f-76b0c5026d7d" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/venta/bogota" ContentHash="hQugmg4mfkaoj_x4xK27zA" CvElementArea="1464, 512, 209, 58" CvType="InputBox" DesignTimeRectangle="1595, 292, 208, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl class='pt-dropdown__container' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl class='pt-dropdown__container' shadowhostid='' tag='DIV' type='' aaname='' /&gt;" Guid="2be901a1-55b0-45db-8ba1-0d1a1dd44699" InformativeScreenshot="c38e5696ba624334d1f34e20b9d57a46.png" Reference="Ls64MbztdUqogCOKu_o7Gw/4Sz4z58xyESKhGIj_whCFQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="1593, 235, 212, 63" CvType="InputBox" DesignTimeRectangle="1606, 307, 146, 30" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl id='sorterControl' shadowhostid='' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl id='sorterControl' shadowhostid='' tag='INPUT' type='text' class='pt-dropdown__container__chips__input pt-dropdown__container__chips__input--no-header-filled' placeholder='Ordenar por' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean" />
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Más reciente'" sap:VirtualizedContainerService.HintSize="492,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="54f55a18-85b4-4ff0-ab9f-76b0c5026d7d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/venta/bogota/?search=form&amp;canary=true" CvTextArea="1604, 522, 113, 16" CvTextArgument="Mas reciente" CvType="Text" DesignTimeRectangle="1604, 522, 113, 17" DesignTimeScaleFactor="1.25" ElementType="Text" Guid="093c2c89-6161-4f20-a6ce-f7a75c99af4d" InformativeScreenshot="f992df376bad5f796e805ea14b236acf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="1604, 522, 113, 16" CvTextArgument="Mas reciente" CvType="Text" DesignTimeRectangle="1596, 498, 206, 68" ElementType="ListItem" FullSelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl idx='3' shadowhostid='' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='PT-DROPDOWN' /&gt;&lt;webctrl type='' shadowhostid='' tag='LI' class='pt-dropdown__option' aaname='' check:innerText='Más reciente' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="492,194" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="54f55a18-85b4-4ff0-ab9f-76b0c5026d7d" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.metrocuadrado.com/venta/bogota/?search=form" CvElementArea="1336, 833, 45, 46" CvTextArea="1351, 846, 12, 17" CvTextArgument="&gt;" CvType="Button" DesignTimeRectangle="1336, 833, 45, 46" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='next page' idx='2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='next page' type='button' tag='BUTTON' class='rc-pagination-item-link' aaname='' /&gt;" Guid="7b5d420c-09a5-469d-952b-aeb716435ca7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="541, 435, 1262, 1723" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='property-list__results' tag='DIV' /&gt;" Guid="7c1a41ab-5105-4223-af74-a071108cfa21" InformativeScreenshot="0f7c2d6b67e7dc7dbc1e9edb3e886d38.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="492,220" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][d(alt)][k(f4)][u(alt)][u(hk)]" Version="V3" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="492,174" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;completed extract urls&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQuSURBVGhD7VpdqFRVFP7M/M1CkDSjPyl76KV8kUgoDaQsFaMuRHDPXnvuZTBJ0JSeergPBvUiVCBE9BS++CRBGUGFUFEKUaJGvkhJQlihKaRpfrHWOTOe2XPO8cydOeN5mA8Wdy577zPr2/vb66y99gADAiexjB6vUfDGUMxhFwWbQz+mDU7gcQp+oeC/oZjDFXp8GfqRCQIzuBVzOIaZYVsL9HiCDqfowCHZVQoOhn50wZxv4E567KTDsxzD7LCPwlagbgRIzOAk7qLgHQr+pOAYBS+yifldfRt4mB776fFNJSb4jg6/m+OlCQjuoMN7FFxoD3L42UhsxZyOvtsxzzayYHlF9ggF++hM/9cnwM1YTMGbFPzdtXQOxynYlCenKsAtWECP923zFhFIZLPEnHc4k6E9NY0EsZzGcUv4jCpQnoA67/E2Hc5lOB6uxIksOVWBUgTMeYe3SjifJnGcEZ6rWk6FBNqy8eZ8WjbqYGtA6Hjrcywnh+cpmBt+8aBQTCBbNurkaQq+CkhcouCk/U33jUlsZBOzwi8fBHIJcDwz2mjjb/TYTo/X6XA51fYHHXZQ8BEF/3aM8fiek1jL1bg5dKBf5BMQrKXgREoW2vArPV6hx+0UvBoQOEOP9RaXHQ5QcDFYnb2MsCh0oF/kE9AVcNjNCOcTEqcYYVLDo8ohk4CmFNoWYQUFn1l7nGQdYYR13JefM00XuQSsUXMdhz22EjrzSWwvJDCFm8wcVlHwrUUj3cgVRaNiApqwNbE0kdPC9qDrELA+Y5hNj8coeDorRxoUCgm0OyVOtf8vQaA1rijVHgRKEQhRlsAwMCIwItAnRgRGBPrEiECVBJJMYH7RM2tLwN7iHg9ZQinYwKnsXKqWBDT9SDLa/Va6KSgUcMwIvEvBX/Q4S8FZenwS9utAlQRMNhEepOBjuvbB6FqhIMhqzRePJ+nxMgVbzCawKd2nC1USUNDjbnp8SId/Us9XaRyzQkG/1Y7KCaj+m7ifgg/oOo60Wn3T4lmmnEqjagIKk9IE7jUSncfTXDmVxjAIKBISD9h5OktOWsacjpwyCcRVauE4ltnMDcoE97GBNfT4NKh2XJNTrye+TAIaMQQ/0uMLCj4fqOkzHY6molJaTnFVvBc55RC4URbLqYGNnCpZd6oZATVd/b1s4NbQ10zUjIDuhcP2MitbQNASIQUv2RWPsyuequ2wFdbiW8hO5wU/WPTrpWyZ3E7exibu6Yoagza9nlIHBV+nEja1KxQcouAZrptGKB0GkpV+lIIDQQTSmT9ksull5oeJJCNdaWG0c69p1DlqheQaO69lSb0g13dKOPNHklrrvHBcLWC3QhNYwahL860q9/q8w01tkNzJ7UlK+7FsHH5ihBd6euPeKLR/xqDHyThJ1JlX5+spmzzYLwIE2+jxVK+y+R88IXqe3P18agAAAABJRU5ErkJggg==" InformativeScreenshot="9694b86d1591add14fa1745203132b76.jpg" Selector="&lt;html app='chrome.exe' title='Locales en Arriendo en Bogotá D.C. - Inmuebles Nuevos y Usados' /&gt;" Title="Inmuebles en Venta en Bogotá D.C. - Finca Raíz en Colombia" Url="https://www.metrocuadrado.com/local/arriendo/bogota?search=form" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ExtractForEachRealState.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="558.4,136.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ExtractForEachRealState.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="ExtractDataTable">[ExtractDataTable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>
